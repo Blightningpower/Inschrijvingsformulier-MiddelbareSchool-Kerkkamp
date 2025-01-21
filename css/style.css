@@ -13,6 +13,14 @@
       font-family: sans-serif;
       font-style: oblique;
   }
+
+  main {
+    margin: 0 auto 0 auto;
+  }
+
+  ul {
+    padding: 2rem;
+  }
 }
 
 html,
@@ -24,6 +32,7 @@ body {
   float: unset;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 header {
@@ -41,16 +50,17 @@ header {
 }
 
 h1 {
-  font-size: 2.7vw;
+  font-size: 3.1vw;
 }
 
 main {
-  margin: 5vh auto 0 auto;
+  margin: 10vh auto 0 auto;
+  min-height: inherit;
   padding: 0 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: space-between;
+  align-content: center;
   flex-wrap: wrap;
 }
 
@@ -69,7 +79,7 @@ span {
 }
 
 ul {
-  padding: 5rem 3rem 3rem;
+  padding: 3rem;
   margin: 0;
 }
 
@@ -135,7 +145,7 @@ span {
 }
 
 form {
-  margin: 1rem auto 2rem;
+  margin: 2% auto;
 }
 
 label {
@@ -155,41 +165,16 @@ label {
 input[type] {
   text-align: center;
   border: 2px solid;
+  width: 20rem;
+  min-width: 20vw;
 }
 
 .col-25 {
   margin-bottom: 5px;
 }
+
 .row {
   margin-top: 3%;
-}
-
-#group {
-  min-width: 19rem;
-}
-
-#nChild {
-  min-width: 26rem;
-}
-
-#nParent {
-  min-width: 27rem;
-}
-
-#phoneNrChild {
-  min-width: 23rem;
-}
-
-#phoneNrParent {
-  min-width: 20rem;
-}
-
-#eMailChild {
-  min-width: 21rem;
-}
-
-#eMailParent {
-  min-width: 20rem;
 }
 
 ::placeholder {
@@ -228,7 +213,6 @@ input[type] {
 }
 
 #iBAN {
-  min-width: 25rem;
   background-color: #c0ffee;
   /* Light green background */
   border-radius: 3px;
@@ -241,5 +225,7 @@ input[type] {
 
 .paymentText {
   margin-top: 3rem;
+  padding: 3%;
   color: #8b0000;
+background-color: #d4edda ;
 }
